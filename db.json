@@ -1,0 +1,371 @@
+{
+  "usuarios": [
+    {
+      "id": "301",
+      "nombre": "Dra. Ariel",
+      "apellido": "Hanson",
+      "correo": "Ariel@veterinaria.com",
+      "rol_nombre": "Veterinario",
+      "contrasena": "Ariel123",
+      "estado": "Activo",
+      "telefono": "555-1001",
+      "direccion": "Av. Veterinarios 123"
+    },
+    {
+      "id": "302",
+      "nombre": "admin",
+      "apellido": "admin",
+      "correo": "admin@veterinaria.com",
+      "rol_nombre": "Administrador",
+      "contrasena": "admin123",
+      "estado": "Activo",
+      "telefono": "555-1000",
+      "direccion": "Administración"
+    },
+    {
+      "id": "303",
+      "nombre": "Egon",
+      "apellido": "Stetmann",
+      "correo": "Egon@veterinaria.com",
+      "rol_nombre": "Secretaria",
+      "contrasena": "Egon123",
+      "estado": "Activo",
+      "telefono": "555-1002",
+      "direccion": "Recepción"
+    },
+    {
+      "id": "304",
+      "nombre": "Fredo",
+      "apellido": "Galarza",
+      "correo": "Fredo@veterinaria.com",
+      "rol_nombre": "Cliente",
+      "contrasena": "Fredol123",
+      "estado": "Activo",
+      "telefono": "555-9999",
+      "direccion": "Av. Las Mascotas 123"
+    },
+    {
+      "id": "3ecb",
+      "nombre": "asdasd",
+      "apellido": "asdasd",
+      "correo": "asdads@asdasd",
+      "telefono": "12414141",
+      "direccion": "asdasdsd",
+      "rol_nombre": "Cliente",
+      "contrasena": "asdasdasd",
+      "estado": "Activo",
+      "fechaRegistro": "2025-11-06T23:45:25.292Z"
+    },
+    {
+      "id": "2855",
+      "nombre": "asdasd",
+      "apellido": "asdasd",
+      "telefono": "12414",
+      "direccion": "asdasd",
+      "correo": "",
+      "rol_nombre": "Cliente",
+      "contrasena": "cliente123",
+      "estado": "Activo",
+      "fechaRegistro": "2025-11-07T00:09:49.468Z"
+    }
+  ],
+  "mascotas": [
+    {
+      "id": "101",
+      "nombre": "Luna",
+      "especie": "Perro",
+      "raza": "Labrador",
+      "edad": 3,
+      "sexo": "H",
+      "usuario_id": 304,
+      "estado": "Activo",
+      "fecha_registro": "2024-01-15"
+    },
+    {
+      "id": "102",
+      "nombre": "Misifú",
+      "especie": "Gato",
+      "raza": "Siamés",
+      "edad": 4,
+      "sexo": "M",
+      "usuario_id": 306,
+      "estado": "Activo",
+      "fecha_registro": "2024-01-16"
+    },
+    {
+      "id": "103",
+      "nombre": "Coco",
+      "especie": "Pájaro",
+      "raza": "Cacatúa",
+      "edad": 2,
+      "sexo": "H",
+      "usuario_id": 304,
+      "estado": "Activo",
+      "fecha_registro": "2024-01-17"
+    },
+    {
+      "id": "104",
+      "nombre": "Max",
+      "especie": "Perro",
+      "raza": "Pastor Alemán",
+      "edad": 5,
+      "sexo": "M",
+      "usuario_id": 305,
+      "estado": "Activo",
+      "fecha_registro": "2024-01-18"
+    },
+    {
+      "id": "057b",
+      "nombre": "asdadad",
+      "especie": "Tortuga",
+      "raza": "qwewewe",
+      "edad": 2,
+      "sexo": "M",
+      "usuario_id": "3ecb",
+      "estado": "Activo",
+      "fecha_registro": "2025-11-06"
+    }
+  ],
+  "consultas": [
+    {
+      "id": "201",
+      "mascota_id": 101,
+      "veterinario_id": 301,
+      "fecha_consulta": "2024-01-20",
+      "motivo": "Vacunación anual",
+      "diagnostico": "Saludable, aplicada vacuna múltiple",
+      "tratamiento": "Vacuna DHPPL",
+      "costo": 150,
+      "estado": "Completada"
+    },
+    {
+      "id": "202",
+      "mascota_id": 102,
+      "veterinario_id": 301,
+      "fecha_consulta": "2024-01-25",
+      "motivo": "Control dental",
+      "diagnostico": "Ligera gingivitis",
+      "tratamiento": "Limpieza dental, dieta especial",
+      "costo": 200,
+      "estado": "Completada"
+    },
+    {
+      "id": "203",
+      "mascota_id": 103,
+      "veterinario_id": 301,
+      "fecha_consulta": "2024-02-10",
+      "motivo": "Control general",
+      "diagnostico": "Saludable, buen estado físico",
+      "tratamiento": "Revisión general, recomendaciones alimenticias",
+      "costo": 80,
+      "estado": "Completada"
+    },
+    {
+      "id": "204",
+      "mascota_id": 101,
+      "veterinario_id": 301,
+      "fecha_consulta": "2024-02-15",
+      "motivo": "Cirugía menor",
+      "diagnostico": "Extirpación de quiste benigno",
+      "tratamiento": "Cirugía menor, antibióticos, analgésicos",
+      "costo": 300,
+      "estado": "Completada"
+    },
+    {
+      "id": "205",
+      "mascota_id": 102,
+      "veterinario_id": 301,
+      "fecha_consulta": "2024-02-20",
+      "motivo": "Desparasitación",
+      "diagnostico": "Presencia de parásitos intestinales",
+      "tratamiento": "Desparasitante, vitaminas, control en 15 días",
+      "costo": 120,
+      "estado": "Completada"
+    },
+    {
+      "id": "206",
+      "mascota_id": 103,
+      "veterinario_id": 301,
+      "fecha_consulta": "2024-03-01",
+      "motivo": "Control de plumas",
+      "diagnostico": "Muda estacional normal",
+      "tratamiento": "Suplemento vitamínico para aves",
+      "costo": 250,
+      "estado": "Completada"
+    },
+    {
+      "id": "9a72",
+      "mascota_id": "057b",
+      "veterinario_id": "301",
+      "fecha_consulta": "2025-11-06",
+      "motivo": "asdasd",
+      "diagnostico": "add",
+      "tratamiento": "asdadsd",
+      "medicamentos": "asdasd",
+      "observaciones": "adasd",
+      "costo": 200,
+      "peso": 24,
+      "temperatura": 24,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "054a",
+      "mascota_id": "057b",
+      "veterinario_id": "301",
+      "fecha_consulta": "2025-11-06",
+      "motivo": "asdasd",
+      "diagnostico": "asda",
+      "tratamiento": "asdasd",
+      "medicamentos": "asdad",
+      "observaciones": "asdasdasd",
+      "costo": 22,
+      "peso": 21,
+      "temperatura": 21,
+      "estado": "Completada"
+    },
+    {
+      "id": "3458",
+      "mascota_id": "057b",
+      "veterinario_id": "301",
+      "fecha_consulta": "2025-11-07",
+      "motivo": "23232",
+      "diagnostico": "aqwewqe",
+      "tratamiento": "23123a",
+      "medicamentos": "sdsdsd",
+      "observaciones": "sdsdsd",
+      "costo": 20,
+      "peso": 22,
+      "temperatura": 22,
+      "estado": "Completada"
+    }
+  ],
+  "citas": [
+    {
+      "id": "1",
+      "mascota_id": 101,
+      "usuario_id": 301,
+      "fechaCita": "2024-01-20",
+      "horaCita": "10:00",
+      "motivo": "Vacunación anual",
+      "estado": "Completada",
+      "fechaRegistro": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "mascota_id": 102,
+      "usuario_id": 301,
+      "fechaCita": "2024-01-25",
+      "horaCita": "11:00",
+      "motivo": "Control dental",
+      "estado": "Agendada",
+      "fechaRegistro": "2024-01-20T14:30:00.000Z"
+    },
+    {
+      "id": "b54c",
+      "mascota_id": "101",
+      "usuario_id": "301",
+      "fechaCita": "2025-11-09",
+      "horaCita": "10:00",
+      "motivo": "asdasd",
+      "estado": "Agendada",
+      "fechaRegistro": "2025-11-04T01:51:24.730Z"
+    }
+  ],
+  "facturas": [
+    {
+      "id": "1",
+      "usuario_id": 3,
+      "consulta_id": 201,
+      "numero_factura": "FACT-20240120-001",
+      "fecha_emision": "2024-01-20",
+      "fecha_vencimiento": "2024-02-19",
+      "subtotal": 150,
+      "iva": 19.5,
+      "total": 169.5,
+      "estado": "Pagada",
+      "metodo_pago": "Efectivo",
+      "fecha_pago": "2024-01-20",
+      "observaciones": "Factura por vacunación anual de la mascota Luna"
+    },
+    {
+      "id": "2",
+      "usuario_id": 2,
+      "consulta_id": 202,
+      "numero_factura": "FACT-20240125-002",
+      "fecha_emision": "2024-01-25",
+      "fecha_vencimiento": "2024-02-24",
+      "subtotal": 200,
+      "iva": 26,
+      "total": 226,
+      "estado": "Pagada",
+      "metodo_pago": "Tarjeta Débito",
+      "fecha_pago": "2024-01-25",
+      "observaciones": "Factura por control dental y limpieza de la mascota Misifú"
+    },
+    {
+      "id": "3",
+      "usuario_id": 3,
+      "consulta_id": 203,
+      "numero_factura": "FACT-20240210-003",
+      "fecha_emision": "2024-02-10",
+      "fecha_vencimiento": "2024-03-11",
+      "subtotal": 80,
+      "iva": 10.4,
+      "total": 90.4,
+      "estado": "Pendiente",
+      "observaciones": "Factura por consulta de control general de la mascota Coco"
+    },
+    {
+      "id": "4",
+      "usuario_id": 1,
+      "consulta_id": 204,
+      "numero_factura": "FACT-20240215-004",
+      "fecha_emision": "2024-02-15",
+      "fecha_vencimiento": "2024-03-16",
+      "subtotal": 300,
+      "iva": 39,
+      "total": 339,
+      "estado": "Vencida",
+      "observaciones": "Factura por cirugía menor y medicamentos"
+    },
+    {
+      "id": "5",
+      "usuario_id": 2,
+      "consulta_id": 205,
+      "numero_factura": "FACT-20240220-005",
+      "fecha_emision": "2024-02-20",
+      "fecha_vencimiento": "2024-03-21",
+      "subtotal": 120,
+      "iva": 15.6,
+      "total": 135.6,
+      "estado": "Pendiente",
+      "observaciones": "Factura por desparasitación y vitaminas"
+    },
+    {
+      "id": "6",
+      "usuario_id": 3,
+      "consulta_id": 206,
+      "numero_factura": "FACT-20240301-006",
+      "fecha_emision": "2024-03-01",
+      "fecha_vencimiento": "2024-03-31",
+      "subtotal": 250,
+      "iva": 32.5,
+      "total": 282.5,
+      "estado": "Anulada",
+      "observaciones": "Factura anulada - duplicado de pago"
+    },
+    {
+      "id": "b33c",
+      "cliente_id": "3ecb",
+      "consulta_id": "054a",
+      "numero_factura": "FACT-1762472937779-119",
+      "fecha_emision": "2025-11-06",
+      "fecha_vencimiento": "2025-12-06",
+      "subtotal": 22,
+      "iva": 2.8600000000000003,
+      "total": 24.86,
+      "estado": "Pendiente",
+      "observaciones": "Factura por consulta médica - asdasd"
+    }
+  ]
+}
