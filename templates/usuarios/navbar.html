@@ -1,9 +1,0 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'dashboard' %}">🐾 Sistema Veterinario</a>
-        <div class="navbar-nav ms-auto">
-            <span class="navbar-text me-3">Hola, {{ user.get_full_name }} ({{ user.idRol.nombreRol }})</span>
-            <a class="btn btn-outline-light btn-sm" href="{% url 'logout' %}">Cerrar Sesión</a>
-        </div>
-    </div>
-</nav>
