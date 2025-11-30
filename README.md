@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+# Aplicación Web Veterinaria 
+  Una aplicación frontend moderna construida con **React**, **TypeScript** y **Vite**, diseñada para gestionar citas y pacientes de una clínica veterinaria.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Inicio Rápido: Guía de Instalación
+  Lista de pasos para configurar y ejecutar el proyecto.
 
-Currently, two official plugins are available:
+### Paso 1: Instalación de Dependencias del Proyecto
+  Abre tu terminal en la carpeta raíz del proyecto y ejecuta:
+  ```bash
+  npm install 
+  ```
+### Paso 2: Instalando JSON Server 
+  Es necesario json-server para simular la API que proveerá los datos al frontend. Instalar json-server.
+  ```bash
+  npm install json-server
+  ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Paso 3: Iniciando el Servidor de Datos
+  Abre una nueva ventana de terminal y ejecuta el servidor de datos, que leerá la información de db.json:
+  ```bash
+  json-server --watch db.json --port 3001
+  ```
 
-## React Compiler
+### Paso 4: Iniciando el Servidor de Desarrollo
+  Volver a la primera terminal y ejecuta el frontend:
+  ```bash
+  npm run dev
+  ``` 
+  URL del Frontend: http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías Clave
+  Frontend Principal: React
+  Lenguaje: TypeScript
+  Empaquetador/Servidor: Vite
+  API Mock: JSON Server
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Estructura del Proyecto
+  src/: Contiene todo el código fuente de React.
+  src/components/: Componentes reutilizables.
+  src/pages/: Vistas principales o rutas.
+  db.json: El archivo que actúa como base de datos, utilizado por JSON Server.
